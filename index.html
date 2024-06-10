@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS_GAME</title>
+    <style>
+        body{
+            background-color: rgb(4, 68, 111);
+            text-align: center;
+            margin: 0;
+        }
+        h2.head{
+           
+            text-decoration: underline;
+            background-color:yellowgreen ;
+            border-radius: 25px;
+            padding: 5px;
+            color:  rgb(109, 56, 3);
+        }
+       
+        div {
+            margin-top: 20px;
+        }
+        .score{
+            display: flex; 
+            align-items: center; 
+            justify-content: space-evenly;
+            color: white;
+        }
+        .choice{
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+
+
+        h2{
+            margin: 10px 15px;
+        }
+        h3{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+       
+        button{
+            background-color: yellowgreen;
+            border-radius: 20px;
+            padding: 5px 20px;
+            color: rgb(109, 56, 3);
+            border: 1px solid black;
+            cursor: pointer;
+            font-size: 10px;
+        }
+        button:hover{
+            color:yellowgreen ;
+            background-color: rgb(109, 56, 3);
+        }
+        #restart{
+            color: white; 
+            background-color: red;
+            margin-top: 10px;
+        }
+        #restart:hover{
+            background-color: yellowgreen;
+        }
+               
+    </style>
+
+</head>
+<body>
+    
+    <h2 class="head">Rock Paper Scissors Game</h2>
+<div class="score">
+    <p>Draw : <span id="draw" style="color: white;">0</span> </p>
+    <p>Player : <span id="playerwin" style="color: white;">0</span></p>
+    <p>Computer : <span id="computerwin" style="color: white;">0</span></p>
+</div>
+    <div class="choice" >
+        <h2>Player :  </h2>
+            <img  id="playerimg" alt=""  width="15px" style="margin-left: 5px;">
+            <span id="player"></span> 
+           
+        
+        <h2>Computer :</h2>  
+            <img  id="comimg" alt="" width="15px" style="margin-left: 5px;" >
+            <span id="computer"></span> 
+    </div>
+    <div class="btn">
+        <button id="rock"><img src="img/rock.png" id="imgrock"  alt="" width="25px" ><br>Rock</button>
+        <button id="paper"><img src="img/paper.png" id="imgpaper" alt="" width="25px"><br>Paper</button>
+        <button id="scissor"><img src="img/scissors.png" id="imgscissor" alt="" width="25px"><br>Scissor</button>
+    </div>
+<div >
+    <h3><span id="result" style="color: white;"></span></h3>
+    <button id="restart" >Restart</button>
+
+</div>
+
+
+
+ <script src="index.js"></script>
+</body>
+</html>
